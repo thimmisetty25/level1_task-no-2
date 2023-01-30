@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/efaf8ffaf3.js" crossorigin="anonymous"></script>
+    <title>Personal-porTolio</title>
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin sans', sans-serif;
+}
+.hero{
+    height: 100vh;
+    width:100%;
+    background-image: url(./Pictures/Screenshots/img_1_1664332113638.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:blue;
+    transition: .3s;
+}
+.skillss{
+    color:black;
+    padding: 10px 20px;
+    margin: 50px;
+}
+button{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 12px 50px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%);
+}
+h1{
+    color: white;
+    margin: 10px 0px 10px;
+    font-size: 35px;
+}
+h3{
+    color:yellow;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 10px 0px 10px;
+}
+h4{
+    color:black;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 50%;
+    padding: 14px 130px 14px 15px;
+    border: 5px solid black;
+    outline: none;
+    border-radius: 30px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border :none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color:lightpink;
+}
+.about img{
+    height: auto;
+    width: 600px;
+}
+.text{
+    width: 500px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display :flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text h2{
+    color: black;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+} 
+.text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+marquee{
+    background-color:blue;
+    padding: 5px;
+    margin: 0px;
+    color: black;
+    font-weight: bold;
+}
+
+.Qualification{
+    background: #f18973;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 55px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 560px;
+    width: 335px;
+    padding:  20px 35px;
+    background:green;
+    border-radius: 20px;
+    margin: 15px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:yellow;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: .4s;
+}
+.card .button:hover{
+    background-color: pink;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contact{
+    width: 100%;
+    height: 290px;
+    background:#858585;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contact form{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact .button-two{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px;
+    margin: 10px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+footer{
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background:pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    font-size: 20px;
+    color: black;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    padding-top: 2px;
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">VENKATESWARLU<span>  VENKY</span></h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div>
+                <div class="skillss">
+               <h1> Skills</h1>
+              <i class="fa-brands fa-html5">html</i>
+              <br>
+              <br>
+              <i class="fa-brands fa-css3-alt">css</i>
+              <br>
+              <br>
+              <i class="fa-brands fa-java">java</i>
+                </div>
+            <button type="button">Subscribe</button>
+        </nav>
+      </div>
+        <div class="content">
+            <h4>Hello ,my name is</h4>
+            <h1><span>VENKATESWARLU</span> VENKY</h1>
+            <h3>my web Page</h3>
+            <div class="newsletter">
+                <form>
+                    <input type="file">
+               <input type="Submit" name="submit" value="upload img">
+                </form>
+            </div>
+        </div>
+    </div><marquee behavior="linear" direction="left"> ABOUT ME............</marquee>
+    <section class="about">
+        <div class="main">
+            <img src="./Pictures/Screenshots/img_1_1664332113638.jpg">
+            <div class="text">
+                <h2>About Me</h2>
+                <h5>Electrical and<span> Electronic Engineer</span></h5>
+                <p>I did My B.tech in Electrical and Electronic Engineer Form Krishna Chaitanya Institute Of Telchnology And Science's.I did my diploma in SVCM College</p>
+                <p><i class="fas fa-map-marker-alt"></i>Markapur,Andhra Pradesh,Prakasam Dist..</p>
+                <button type="button">scroll down</button>
+            </div>
+        </div>
+    </section>
+    <marquee behavior="linear" direction="left">MY  EDUCATION  DETAILS.............</marquee>
+    <div class="Qualification">
+        <div class="title">
+            <h2>EDUCATION DETAILS</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-school"></i>
+                <h5>SSC EXAMINATION </h5>
+                <div class="pra">
+                      <p>I have scored 70 percent in SSC examination in 2016 and 
+                        I was first in my class.</p>
+                      <p style="text-align: center;">
+                        <p><i class="fas fa-map-marker-alt"></i>Kalasapdu, Andhra Pradesh,516217, Kadapa Dist.</p>
+                        <a class="button" href="#">Read more</a>
+                      </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-book-open"></i>
+                <h5>Diploma EXAMINATION</h5>
+                <div class="pra">
+                      <p>I have scored 80 percent in Dipolam examination 2019 and 
+                        I have scored 80 percentile </p>
+                      <p style="text-align: center;">
+                        <p><i class="fas fa-map-marker-alt"></i>badvel, Andhra Pradesh,516227, Kadapa Dist.</p>
+                        <a class="button" href="#">Read more</a>
+                      </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h5>ENGINEERING</h5>
+                <div class="pra">
+                      <p>I have scored 6.5 pointer in my first year of engineering.
+                        and i have scored 6.5 cgpa in end of year.</p>
+                      <p style="text-align: center;">
+                        <p><i class="fas fa-map-marker-alt"></i>Markapur,Andhra Pradesh,Prakasam Dist..</p>
+                        <a class="button" href="#">Read more</a>
+                      </p>
+                </div>
+            </div>
+
+        </div>
+    </div>   
+
+    <div class="contact">
+        <p>This Is My Beautiful Website</p>
+        <a class="button-two" href="#">Contact No</a>
+        <form>
+            <input type="text" placeholder="your name">
+            <br>
+            <br>
+            <input type="email" name="id" placeholder="your mail">
+            <br>
+            <button  style=color:yellow; type="button">send me</button>
+            
+
+        </form>
+    </div>
+
+    <footer>
+        <p>VENKATESWARLU</p>
+        <p>I created this website using HTML,CSS.And thank you for 
+                       visiting my website.</p>
+        <div class="social">
+            <p><a href="#"><i class="fa-brands fa-snapchat"></i></a>snap</p>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="hh">
+        <h2>Contact Info</h2>
+        <br>
+       <p><i class="fa-regular fa-envelope"></i> venkateshthimmsetty72@gmail.com</p>
+       <p><i class="fa-regular fa-phone"></i> +91-8367766050</p>
+       <p><i class="fas fa-map-marker-alt"></i> Andhra Pradesh Kalasapadu Kadapa Dist.</p>
+        </div>
+        <br>
+        <a class="button" href="#">End Web Page</a>
+    </footer>
+
+</body>
+</html>
